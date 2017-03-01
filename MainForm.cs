@@ -21,9 +21,19 @@ namespace FishGUI
 
         private void btAddFish_Click(object sender, EventArgs e)
         {
-            FishForm fm = new FishForm();
-            fm.ShowDialog();
+            using (var fm = new FishForm())
+            {
+                if (fm.ShowDialog() == DialogResult.OK)
+                {
+                    if (fm.shark != null)
+                    {
+                        //timer.enabled = false;
+                        //animal wrapper
+                        //timer.enabled = true;
+                    }
+                }
 
+            }
         }
 
         private void button2AddMullusk_Click(object sender, EventArgs e)

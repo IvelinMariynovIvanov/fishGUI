@@ -34,8 +34,8 @@
             this.radioButton4GoldFish = new System.Windows.Forms.RadioButton();
             this.radioButton3Shark = new System.Windows.Forms.RadioButton();
             this.groupBoxFisheGender = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2Female = new System.Windows.Forms.RadioButton();
+            this.radioButton1Male = new System.Windows.Forms.RadioButton();
             this.label6Needlitters = new System.Windows.Forms.Label();
             this.textBox6NeedLitters = new System.Windows.Forms.TextBox();
             this.label5MaxTemp = new System.Windows.Forms.Label();
@@ -111,8 +111,8 @@
             // 
             // groupBoxFisheGender
             // 
-            this.groupBoxFisheGender.Controls.Add(this.radioButton2);
-            this.groupBoxFisheGender.Controls.Add(this.radioButton1);
+            this.groupBoxFisheGender.Controls.Add(this.radioButton2Female);
+            this.groupBoxFisheGender.Controls.Add(this.radioButton1Male);
             this.groupBoxFisheGender.Location = new System.Drawing.Point(20, 149);
             this.groupBoxFisheGender.Name = "groupBoxFisheGender";
             this.groupBoxFisheGender.Size = new System.Drawing.Size(283, 100);
@@ -120,27 +120,27 @@
             this.groupBoxFisheGender.TabStop = false;
             this.groupBoxFisheGender.Text = "Choose fish gender";
             // 
-            // radioButton2
+            // radioButton2Female
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(7, 54);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(59, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Female";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2Female.AutoSize = true;
+            this.radioButton2Female.Location = new System.Drawing.Point(7, 54);
+            this.radioButton2Female.Name = "radioButton2Female";
+            this.radioButton2Female.Size = new System.Drawing.Size(59, 17);
+            this.radioButton2Female.TabIndex = 1;
+            this.radioButton2Female.TabStop = true;
+            this.radioButton2Female.Text = "Female";
+            this.radioButton2Female.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // radioButton1Male
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(7, 30);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(48, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1Male.AutoSize = true;
+            this.radioButton1Male.Location = new System.Drawing.Point(7, 30);
+            this.radioButton1Male.Name = "radioButton1Male";
+            this.radioButton1Male.Size = new System.Drawing.Size(48, 17);
+            this.radioButton1Male.TabIndex = 0;
+            this.radioButton1Male.TabStop = true;
+            this.radioButton1Male.Text = "Male";
+            this.radioButton1Male.UseVisualStyleBackColor = true;
             // 
             // label6Needlitters
             // 
@@ -157,7 +157,7 @@
             this.textBox6NeedLitters.Name = "textBox6NeedLitters";
             this.textBox6NeedLitters.Size = new System.Drawing.Size(100, 20);
             this.textBox6NeedLitters.TabIndex = 10;
-            this.textBox6NeedLitters.TextChanged += new System.EventHandler(this.textBox6NeedLitters_TextChanged);
+            this.textBox6NeedLitters.TextChanged += new System.EventHandler(this.textBox6NeedLitters_TextChanged_1);
             // 
             // label5MaxTemp
             // 
@@ -201,7 +201,7 @@
             this.textBox5MaxTemperature.Name = "textBox5MaxTemperature";
             this.textBox5MaxTemperature.Size = new System.Drawing.Size(100, 20);
             this.textBox5MaxTemperature.TabIndex = 4;
-            this.textBox5MaxTemperature.TextChanged += new System.EventHandler(this.textBox5MaxTemperature_TextChanged);
+            this.textBox5MaxTemperature.TextChanged += new System.EventHandler(this.textBox5MaxTemperature_TextChanged_1);
             // 
             // textBox4MinTemperature
             // 
@@ -209,7 +209,7 @@
             this.textBox4MinTemperature.Name = "textBox4MinTemperature";
             this.textBox4MinTemperature.Size = new System.Drawing.Size(100, 20);
             this.textBox4MinTemperature.TabIndex = 3;
-            this.textBox4MinTemperature.TextChanged += new System.EventHandler(this.textBox4MinTemperature_TextChanged);
+            this.textBox4MinTemperature.TextChanged += new System.EventHandler(this.textBox4MinTemperature_TextChanged_1);
             // 
             // textBox3Size
             // 
@@ -217,8 +217,7 @@
             this.textBox3Size.Name = "textBox3Size";
             this.textBox3Size.Size = new System.Drawing.Size(100, 20);
             this.textBox3Size.TabIndex = 2;
-            this.textBox3Size.TextChanged += new System.EventHandler(this.textBox3Size_TextChanged);
-            this.textBox3Size.Validating += new System.ComponentModel.CancelEventHandler(this.textBox3Size_Validating);
+            this.textBox3Size.TextChanged += new System.EventHandler(this.textBox3Size_TextChanged_1);
             // 
             // textBox2Name
             // 
@@ -226,7 +225,7 @@
             this.textBox2Name.Name = "textBox2Name";
             this.textBox2Name.Size = new System.Drawing.Size(100, 20);
             this.textBox2Name.TabIndex = 1;
-            this.textBox2Name.TextChanged += new System.EventHandler(this.textBox2Name_TextChanged);
+            this.textBox2Name.TextChanged += new System.EventHandler(this.textBox2Name_TextChanged_1);
             // 
             // button1AddFish
             // 
@@ -250,6 +249,8 @@
             this.Controls.Add(this.button1AddFish);
             this.Controls.Add(this.gBoxFishProp);
             this.Name = "FishForm";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Fish";
             this.gBoxFishProp.ResumeLayout(false);
             this.gBoxFishProp.PerformLayout();
@@ -266,8 +267,8 @@
 
         private System.Windows.Forms.GroupBox gBoxFishProp;
         private System.Windows.Forms.GroupBox groupBoxFisheGender;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2Female;
+        private System.Windows.Forms.RadioButton radioButton1Male;
         private System.Windows.Forms.Label label6Needlitters;
         private System.Windows.Forms.TextBox textBox6NeedLitters;
         private System.Windows.Forms.Label label5MaxTemp;

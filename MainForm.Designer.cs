@@ -96,7 +96,6 @@
         private System.Windows.Forms.Button button2AddMullusk;
         private System.Windows.Forms.GroupBox groupBox1SelectOperaion;
         private System.Windows.Forms.Button button1CreateAquarium;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

@@ -63,9 +63,39 @@ namespace FishGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap goldenfish_icon {
+            get {
+                object obj = ResourceManager.GetObject("goldenfish_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap octopus_icon {
+            get {
+                object obj = ResourceManager.GetObject("octopus_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shark_icon {
             get {
                 object obj = ResourceManager.GetObject("shark_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Snail_icon {
+            get {
+                object obj = ResourceManager.GetObject("Snail_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

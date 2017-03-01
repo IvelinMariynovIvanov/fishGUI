@@ -14,13 +14,27 @@ namespace FishGUI
         public int step;
         public Animal animal;
         public PictureBox picBox;
-       
+        public Label labelName;
 
         public AnimalWrapper(Animal animal)
         {
+            labelName = new Label();
             picBox = new PictureBox();
+            
+            labelName.Location = new Point(animal.XPossition+50, animal.YPossition -10);
+            labelName.Height = 15;
+            labelName.Width = 60;
+            labelName.AutoSize = true;
+            labelName.Text = animal.AnimalName;
+            picBox.Height = 60;
+            picBox.Width = 60;
             picBox.Location = new Point(animal.XPossition, animal.YPossition);
             picBox.Image = animal.Img;
+            
+
+          //  picBox.Image.RotateFlip(RotateFlipType.RotateNoneFlipX);
+            
+          //  this.refresh();
 
             this.animal = animal;
            // this.step = step;
@@ -35,7 +49,6 @@ namespace FishGUI
             set
             {
                 picBox.Location = value;
-
             }
         }
 

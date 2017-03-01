@@ -120,6 +120,15 @@
   <ItemGroup>
     <None Include="Resources\starfish-icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goldenfish-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\octopus-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snail-icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
